@@ -29,3 +29,34 @@ let state;
 
 console.log(typeof undefined); // undefined
 console.log(typeof null); // object
+
+// Primitive
+
+// 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
+
+// Yes, JavaScript is a dynamically typed language.
+
+const id = Symbol('123')
+const anotherId = Symbol('123')
+console.log(id === anotherId)
+
+const bigNumber = 8348060245565245n
+
+// Reference (Non primitive)
+
+// Array, Objects, Functions
+
+const prophet = ["Adam A.S.", "Ibrahim A.S.", "Muhammad S.W."]
+
+let myObj = {
+    name: "Tarikul",
+    age: 22
+}
+
+const myFunction = function () {
+    console.log("Hello, World")
+}
+
+console.log(typeof prophet); // object
+console.log(typeof myObj); // object
+console.log(typeof myFunction); // object function
