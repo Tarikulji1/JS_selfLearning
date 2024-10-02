@@ -51,3 +51,18 @@ console.log(myCreatedDate3.toLocaleString()); // 1/15/2024, 12:00:00 AM [India c
 let myTimeStamp = Date.now()
 console.log(myTimeStamp);
 console.log(myCreatedDate3.getTime());
+console.log(Math.floor(Date.now()/1000));
+
+let newDate = new Date()
+console.log(newDate);
+console.log(newDate.getMonth() + 1);
+console.log(newDate.getDay() - 1);
+
+// Created complex Date and Time - use Bacticks interpulation
+// `${newDate.getDay()} and the time `
+
+const newDate2 = newDate.toLocaleString('default', {
+    weekday: "long",
+})
+
+console.log(newDate2);
