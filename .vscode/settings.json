@@ -1,3 +1,4 @@
 {
-    "workbench.preferredDarkColorTheme": "Dark Chai"
+    "workbench.preferredDarkColorTheme": "Dark Chai",
+    "livePreview.defaultPreviewPath": "/06_dom/one.html"
 }
