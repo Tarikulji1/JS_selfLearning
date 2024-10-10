@@ -7,6 +7,7 @@ buttons.forEach(function(button){
     button.addEventListener('click', function (e) {
         console.log(e);
         console.log(e.target);
+        /*
         if (e.target.id == 'grey') {
             body.style.backgroundColor = e.target.id
         }
@@ -24,6 +25,19 @@ buttons.forEach(function(button){
         }
         if (e.target.id == 'red') {
             body.style.backgroundColor = e.target.id
+        }
+        */
+        switch (e.target.id) {
+            case 'grey':
+            case 'white':
+            case 'blue':
+            case 'yellow':
+            case 'purple':
+            case 'red':
+                body.style.backgroundColor = e.target.id;
+                break;
+            default:
+                break;
         }
     })
     
