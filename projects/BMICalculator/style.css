@@ -29,7 +29,6 @@
 
 button {
     display: inline-block;
-
     justify-content: center;
     align-items: center;
     width: 150px;
@@ -46,12 +45,6 @@ button {
 
     font-size: 20px;
     font-weight: bold;
-}
-#reset {
-    
-    /* padding: 1px 25px; */
-    
-    /* font-size: 20px; */
 }
 
 h1 {
