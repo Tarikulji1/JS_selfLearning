@@ -1,4 +1,5 @@
 const form = document.querySelector('form');
+const resetButton = document.querySelector('#reset');
 // this usecase will give you empty
 // const height = parseInt(document.querySelector('#height').value)
 
@@ -24,7 +25,12 @@ form.addEventListener('submit', function(e){
         } else if ( bmi > 24.9 ) {
             bmiText = 'Over Weight'
         }
-        results.innerHTML = `<p>${bmi}</p>
-                            <p>${bmiText}</p>`
+        results.innerHTML = `<span>${bmi} <br/> ${bmiText} </span>`
     }
 });
+
+resetButton.addEventListener('click', function () {
+    document.querySelector('#height').value = '';
+    document.querySelector('#weight').value = '';
+    document.querySelector('#results').innerHTML = '';
+})
