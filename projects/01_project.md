@@ -111,4 +111,38 @@ let bmiText = '';
                             
 ```
 
+### Project 2 Assignment : Reset Button Add
+
+```javascript
+const resetButton = document.querySelector('#reset');
+
+resetButton.addEventListener('click', function () {
+    document.querySelector('#height').value = '';
+    document.querySelector('#weight').value = '';
+    document.querySelector('#results').innerHTML = '';
+});
+
+```
+
 ## Project 3 : Digital Clock
+
+```javascript
+
+const clock = document.getElementById('clock');
+// const clock = document.querySelector('#clock');
+
+
+setInterval(function(){
+    let date = new Date()
+    // console.log(date.toLocaleTimeString());
+    clock.innerHTML = date.toLocaleTimeString();
+}, 1000)
+
+```
+
+## Project 4 : Guess the number
+
+```javascript
+
+
+```
