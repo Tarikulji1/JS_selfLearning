@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Tarikul 2.0</title>
+</head>
+<body>
+    <h2>Amazing Images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="leaf" src="https://images.pexels.com/photos/17116116/pexels-photo-17116116/free-photo-of-strawberry-leaves-in-white-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="leaf" ></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/28975090/pexels-photo-28975090/free-photo-of-tranquil-boat-ride-on-yamuna-river-at-dusk.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="river" ></li>
+            <li><img width="200px" id="sun-rises" src="https://images.pexels.com/photos/28292140/pexels-photo-28292140/free-photo-of-a-sunrise-over-a-valley-with-trees-and-hills.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="sun-rises" ></li>
+            <li><img width="200px" id="desert" src="https://images.pexels.com/photos/28754972/pexels-photo-28754972/free-photo-of-beautiful-desert-dunes-meeting-the-ocean.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="desert" ></li>
+            <li><img width="200px" id="ice-land" src="https://images.pexels.com/photos/28917346/pexels-photo-28917346/free-photo-of-snowy-landscape-in-krieglach-austria.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="ice-land" ></li>
+            <li><a href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+/*
+document.getElementById('images').addEventListener('click', function(e) {
+    // console.log('clicked inside the ul');
+}, false)
+
+document.getElementById('river').addEventListener('click', function(e) {
+    // console.log('river clicked');
+    e.stopPropagation();
+}, false)
+
+document.getElementById('google').addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    // console.log('google clicked');
+}, false)
+
+*/
+
+document.querySelector('#images').addEventListener('click', function (e) {
+    console.log(e.target.parentNode);
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'IMG'){
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode;
+        removeIt.remove();
+    }
+    
+    
+}, false)
+
+// removeIt.parentNode.removeChild(removeIt)
+</script>
+</html>
