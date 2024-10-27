@@ -12,7 +12,7 @@ class User {
     }
 
     get password(){
-        return `${this._password.}tarikul` 
+        return `${this._password}tarikul`
     }
 
     set password(value){
@@ -22,4 +22,4 @@ class User {
 
 const tarikul = new User('tarikul@chatgtpt.com', 'abc')
 console.log(tarikul.password);
-console.log(tarikul.E);
+console.log(tarikul.email);
